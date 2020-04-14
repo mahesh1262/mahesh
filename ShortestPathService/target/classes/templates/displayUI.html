@@ -1,0 +1,113 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<style>
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 0px solid #dddddd;
+  text-align: left;
+  padding: 6px;
+}
+
+</style>
+
+<title>Shortest Distance between two planets</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+	<h1>Distance From Source Planet to any Distination Planet:</h1>
+	<form action="#" th:action="@{/findshortestpath}" th:object="${planetNames}"
+		method="post">
+		
+		 
+
+		 <table>
+		 <tr>
+		 <td> Source Planet: </td>
+		 <td>
+		 <select th:field="*{planetSourceName}" readonly="true"/>
+			<option th:value="'A'" th:text="Earth"></option>
+			<option th:value="'B'" th:text="Moon"></option>
+			<option th:value="'C'" th:text="Jupiter"></option>
+			<option th:value="'D'" th:text="Venus"></option>
+			<option th:value="'E'" th:text="Mars"></option>
+			<option th:value="'F'" th:text="Saturn"></option>
+			<option th:value="'G'" th:text="Uranus"></option>
+			<option th:value="'H'" th:text="Pluto"></option>
+			<option th:value="'I'" th:text="Neptune"></option>
+			<option th:value="'J'" th:text="Mercury"></option>
+			<option th:value="'K'" th:text="Alpha_Centauri"></option>
+			<option th:value="'L'" th:text="Luhman_16"></option>
+			<option th:value="'M'" th:text="Epsilon_Eridani"></option>
+			<option th:value="'N'" th:text="Groombridge_34"></option>
+			<option th:value="'O'" th:text="Epsilon_Indi"></option>
+			<option th:value="'P'" th:text="Tau_Ceti"></option>
+			<option th:value="'Q'" th:text="Kapteyns_star"></option>
+			<option th:value="'R'" th:text="Gliese_687"></option>
+			<option th:value="'S'" th:text="Gliese_674"></option>
+			<option th:value="'T'" th:text="Gliese_876"></option>
+			<option th:value="'U'" th:text="Gliese_832"></option>
+			<option th:value="'V'" th:text="Fomalhaut"></option>
+			<option th:value="'W'" th:text="Virginis"></option>
+			<option th:value="'X'" th:text="HD_102365"></option>
+			<option th:value="'Y'" th:text="Gliese_176"></option>
+			<option th:value="'Z'" th:text="Gliese_436"></option>
+		
+		 </td>
+		 <td>&nbsp;</td>
+		 </tr>
+		<br/>
+		 <tr>
+		 <td> Destination Planet: </td>
+		 <td>
+		 <select th:field="*{destinationPlanetName}" />
+			<option th:value="'A'" th:text="Earth"></option>
+			<option th:value="'B'" th:text="Moon"></option>
+			<option th:value="'C'" th:text="Jupiter"></option>
+			<option th:value="'D'" th:text="Venus"></option>
+			<option th:value="'E'" th:text="Mars"></option>
+			<option th:value="'F'" th:text="Saturn"></option>
+			<option th:value="'G'" th:text="Uranus"></option>
+			<option th:value="'H'" th:text="Pluto"></option>
+			<option th:value="'I'" th:text="Neptune"></option>
+			<option th:value="'J'" th:text="Mercury"></option>
+			<option th:value="'K'" th:text="Alpha_Centauri"></option>
+			<option th:value="'L'" th:text="Luhman_16"></option>
+			<option th:value="'M'" th:text="Epsilon_Eridani"></option>
+			<option th:value="'N'" th:text="Groombridge_34"></option>
+			<option th:value="'O'" th:text="Epsilon_Indi"></option>
+			<option th:value="'P'" th:text="Tau_Ceti"></option>
+			<option th:value="'Q'" th:text="Kapteyns_star"></option>
+			<option th:value="'R'" th:text="Gliese_687"></option>
+			<option th:value="'S'" th:text="Gliese_674"></option>
+			<option th:value="'T'" th:text="Gliese_876"></option>
+			<option th:value="'U'" th:text="Gliese_832"></option>
+			<option th:value="'V'" th:text="Fomalhaut"></option>
+			<option th:value="'W'" th:text="Virginis"></option>
+			<option th:value="'X'" th:text="HD_102365"></option>
+			<option th:value="'Y'" th:text="Gliese_176"></option>
+			<option th:value="'Z'" th:text="Gliese_436"></option>
+		
+		 </td>
+		 </tr>
+		 <td>&nbsp;</td>
+		 <br/>
+		 
+		 </table>
+		&nbsp;
+		<div align="center">
+		 	<input type="submit" value="Submit" /> &nbsp;
+		<input type="reset" value="Reset" />
+</div>				
+		 	
+		
+		  </tr>
+		
+	</form>
+</body>
+</html>

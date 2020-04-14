@@ -1,0 +1,27 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<style>
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 0px solid #dddddd;
+  text-align: left;
+  padding: 6px;
+}
+
+</style>
+
+    <title>Shortest Distance between two planets</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body align="center">
+	<h1 th:text="'Shortest Path result:'"></h1>
+	<h1 th:text="${shortestPath}"></h1>
+    <a href="/">Back</a>
+</body>
+</html>

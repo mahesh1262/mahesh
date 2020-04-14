@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Built-By: EXT-BhuvanagiriM
+Build-Jdk: 11.0.6
+Implementation-Title: ShortestPathService
+Implementation-Version: 0.0.1-SNAPSHOT
+Implementation-Vendor-Id: com.ramesh.demo
+Implementation-URL: https://projects.spring.io/spring-boot/#/spring-boot
+ -starter-parent/ShortestPathService
+Created-By: Maven Integration for Eclipse
+
